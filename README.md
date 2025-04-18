@@ -16,10 +16,12 @@ The DLL hooks the `NtQuerySystemInformation` function and intercepts `SystemProc
 
 1. **Build the DLL** (make sure Detours is compiled and linked).
 2. **Specify the process name** to hide by editing:
-   ```cpp
-   #define HIDE_PROCNAME L"notepad.exe" // You can change process name what do you want.
-   ```
-3.**Inject DLL to Target Process** (e.g., Task Manager):
+
+ ```cpp
+#define HIDE_PROCNAME L"notepad.exe" // You can change process name what do you want.
+ ```
+
+3. **Inject DLL to Target Process** (e.g., Task Manager):
 Use a tool like Process Hacker or a custom injector.
 Open Task Manager — the target process should now be hidden.
 🧪 For full invisibility, inject into any process that queries system processes (like PowerShell or Process Explorer).
