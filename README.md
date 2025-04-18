@@ -24,7 +24,7 @@ The DLL hooks the `NtQuerySystemInformation` function and intercepts `SystemProc
 3. **Inject DLL to Target Process** (e.g., Task Manager):
 Use a tool like Process Hacker or a custom injector.
 Open Task Manager — the target process should now be hidden.
-🧪 For full invisibility, inject into any process that queries system processes (like PowerShell or Process Explorer).
+
 
 ## ⚠️ Disclaimer
 
